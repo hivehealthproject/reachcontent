@@ -1,0 +1,44 @@
+# REACH Health Content Site
+# Hugo Book Theme Configuration
+
+baseURL = 'https://reach-health.org/'
+title = 'REACH Health Library'
+theme = 'hugo-book'
+languageCode = 'en-us'
+
+# Book configuration
+disablePathToLower = true
+
+# Needed for mermaid/katex shortcodes
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 4
+
+[params]
+  # Sets color theme: light, dark or auto
+  BookTheme = 'light'
+
+  # Show table of contents on right side of pages
+  BookToC = true
+
+  # Specify root page to render child pages as menu
+  BookSection = 'docs'
+
+  # Enable search
+  BookSearch = true
+
+  # Disable comments
+  BookComments = false
+
+  # Enable portable links
+  BookPortableLinks = 'warning'
+
+[menu]
+[[menu.after]]
+  name = 'REACH App'
+  url = 'https://reach-app.org/'
+  weight = 10
